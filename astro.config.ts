@@ -10,6 +10,7 @@ import {
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import { SITE } from "./src/config";
+import rehypeMermaid from "rehype-mermaid";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
@@ -22,8 +23,16 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkMath,remarkToc, [remarkCollapse, { test: "Table of contents" }]],
-    rehypePlugins: [rehypeKatex],
+    remarkPlugins: [
+      remarkMath,
+      remarkToc,
+      [remarkCollapse, { test: "Table of contents" }],
+    ],
+    rehypePlugins: [rehypeKatex, rehypeMermaid],
+    syntaxHighlight: {
+      type: "shiki",
+      excludeLangs: ["mermaid", "math"],
+    },
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
       themes: { light: "min-light", dark: "night-owl" },
@@ -62,5 +71,6 @@ export default defineConfig({
   },
   experimental: {
     preserveScriptOrder: true,
+    headingIdCompat: true,
   },
 });

@@ -26,3 +26,10 @@ pnpm-debug.log*
 # pagefind
 
 public/pagefind
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
