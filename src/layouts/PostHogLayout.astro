@@ -1,7 +1,7 @@
 ---
-import PostHog from "../components/posthog.astro";
+import PostHog from "@/components/posthog.astro";
 ---
 
-<head>
-  <PostHog />
-</head>
+<PostHog slot="head" />
+
+<slot />
