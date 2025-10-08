@@ -12,7 +12,7 @@ featured: true
 
 ## Table of contents
 
-### **Mark AI Architecture (2 months, 0 users):**
+## **Mark AI Architecture (2 months, 0 users):**
 
 ```mermaid
 sequenceDiagram
@@ -38,7 +38,7 @@ sequenceDiagram
     PostgreSQL->>Frontend: Final results
 ```
 
-### **StudioFotoAI Architecture (1 day, paying customers next week):**
+## **StudioFotoAI Architecture (1 day, paying customers next week):**
 
 ```mermaid
 flowchart TD
@@ -52,7 +52,7 @@ flowchart TD
 
 Here's what 50+ pages of technical documentation taught me about shipping fast.
 
-### The Complexity Monster That Ate My Startup
+## The Complexity Monster That Ate My Startup
 
 I'm a data person. I knew the market needed an AI business analyst assistant that could connect to your data warehouse and give contextual recommendations. The vision was crystal clear, the problem was real, and I had the technical chops to build it.
 
@@ -75,7 +75,7 @@ I had to build it exactly like this. It was the "right" way.
 
 Two months later, Mark AI existed as 50+ pages of technical documentation and zero shipped features.
 
-### The Architecture That Killed My Momentum
+## The Architecture That Killed My Momentum
 
 Here's what my "proper" architecture looked like:
 
@@ -129,7 +129,7 @@ Every day I implemented one feature and discovered three more I "needed" to buil
 
 I was building for an imaginary architecture review, not real users.
 
-### The Brutal Reality Check
+## The Brutal Reality Check
 
 Two months in, staring at my 15-service Docker compose file, I had a moment of clarity:
 
@@ -148,7 +148,7 @@ Meanwhile, I was burning through motivation and runway while competitors were sh
 
 I was optimizing for complexity instead of customer value.
 
-### The 180-Degree Pivot: Simplicity Wins
+## The 180-Degree Pivot: Simplicity Wins
 
 Instead of building the perfect AI platform, I looked for a proven model I could execute quickly.
 
@@ -162,7 +162,7 @@ I found PhotoAI.com by Pieter Levels—making real money with a simple concept: 
 - 1 week to ship it
 - Use existing APIs instead of building everything
 
-### StudioFotoAI: The Power of Boring Technology
+## StudioFotoAI: The Power of Boring Technology
 
 With Claude Code as my pair programming partner, I built the entire StudioFotoAI MVP in one day.
 
@@ -196,7 +196,7 @@ Just:
 - S3 for file storage
 - Xendit for payments
 
-### The Results Speak Louder Than Architecture
+## The Results Speak Louder Than Architecture
 
 **Mark AI (2 months of "proper" engineering):**
 
@@ -216,7 +216,7 @@ Just:
 
 The market doesn't care about your Redis pub/sub implementation. Customers don't buy your microservices. They buy solutions to their problems.
 
-### What I Learned About "Scalable" Architecture
+## What I Learned About "Scalable" Architecture
 
 **The complexity trap I fell into:**
 
@@ -232,7 +232,7 @@ The market doesn't care about your Redis pub/sub implementation. Customers don't
 - You can always refactor later when you have real scaling needs
 - Boring technology is boring because it works
 
-### The Questions That Save You From Overengineering
+## The Questions That Save You From Overengineering
 
 Before building any "scalable" feature, I now ask:
 
@@ -248,7 +248,7 @@ For StudioFotoAI, every technical decision optimizes for speed to market:
 - Simple file uploads instead of complex data pipelines
 - Direct payment integration instead of billing architecture
 
-### The Indonesia Market Strategy
+## The Indonesia Market Strategy
 
 Instead of trying to out-engineer PhotoAI, I'm focusing on execution advantages:
 
@@ -261,7 +261,7 @@ Instead of trying to out-engineer PhotoAI, I'm focusing on execution advantages:
 
 This is competing on execution and market knowledge, not technical complexity.
 
-### From Engineer to Founder: The Mindset Shift
+## From Engineer to Founder: The Mindset Shift
 
 **Engineer mindset (Mark AI):**
 
@@ -279,7 +279,7 @@ This is competing on execution and market knowledge, not technical complexity.
 
 The shift from optimizing for code elegance to optimizing for customer value changed everything.
 
-### Why I'm Sharing This Failure
+## Why I'm Sharing This Failure
 
 Every technical founder has a Mark AI sitting in their GitHub—an overengineered project that never shipped because it was too complex to finish.
 
@@ -290,7 +290,7 @@ Every technical founder has a Mark AI sitting in their GitHub—an overengineere
 - Optimizing for imaginary scale instead of real customers
 - Building for other engineers instead of paying users
 
-### The Simple Framework I Use Now
+## The Simple Framework I Use Now
 
 **Week 1:** Find a proven model, build the simplest version
 **Week 2:** Ship it and get real user feedback
@@ -300,7 +300,7 @@ Not: "Build the perfect architecture then launch."
 
 But: "Launch the minimum viable solution, then improve."
 
-### What's Next for StudioFotoAI
+## What's Next for StudioFotoAI
 
 While Mark AI collects dust with its beautiful microservices architecture, StudioFotoAI is:
 
