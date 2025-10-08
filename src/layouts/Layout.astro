@@ -98,6 +98,8 @@ const structuredData = {
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
 
+    <slot name="head" />
+
     <!-- Google JSON-LD Structured data -->
     <script
       type="application/ld+json"
