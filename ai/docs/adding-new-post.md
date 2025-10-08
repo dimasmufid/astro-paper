@@ -8,6 +8,7 @@ featured: true
 draft: false
 tags:
   - docs
+ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 description:
   Some rules & recommendations for creating or adding new posts using AstroPaperr
   theme.
