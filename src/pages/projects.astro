@@ -1,0 +1,209 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Hr from "@/components/Hr.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import { SITE } from "@/config";
+---
+
+<Layout
+  title={`Projects | ${SITE.title}`}
+  description="Projects from a technical founder building deep systems in AI and data."
+>
+  <Header />
+  <Breadcrumb />
+
+  <main id="main-content" class="mx-auto w-full max-w-app px-4 pb-14">
+    <section id="projects-hero" class="pt-10 pb-8 space-y-4">
+      <p class="text-xs font-semibold uppercase tracking-[0.4em] text-foreground/70">
+        Projects
+      </p>
+      <h1 class="text-3xl font-semibold leading-tight sm:text-4xl">
+        Building deep systems in AI and data
+      </h1>
+      <p class="text-lg leading-relaxed text-foreground/90">
+        I’m a technical founder who obsessively ships the plumbing, models, and
+        product surfaces that make AI and analytics feel dependable. Every
+        project here starts with the data plane and ends with a usable,
+        observable feature.
+      </p>
+      <p class="text-lg leading-relaxed text-foreground/90">
+        This page is the working log of what I’m building now, how I approach
+        systems work, and the kinds of problems I want to partner on.
+      </p>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <LinkButton
+          href="mailto:dimasmoveit@gmail.com"
+          class="rounded-full border border-border bg-foreground px-4 py-2 text-background"
+          ariaLabel="Email Dimas"
+        >
+          Start a project
+        </LinkButton>
+        <LinkButton
+          href="/posts"
+          class="rounded-full border border-border px-4 py-2"
+          ariaLabel="Read recent posts"
+        >
+          Read recent posts
+        </LinkButton>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="active-build" class="py-10 space-y-6">
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+          Now shipping
+        </span>
+        <p class="text-sm text-foreground/80">
+          Founder-led builds focused on reliability, observability, and clear outcomes.
+        </p>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="space-y-4 rounded-lg border border-border bg-muted/30 p-6 md:col-span-2">
+          <h2 class="text-2xl font-semibold">
+            Nesra — AI lab for data-heavy products
+          </h2>
+          <p class="leading-relaxed">
+            Nesra is my sandbox for building AI-native products where data quality,
+            evaluation, and user trust matter as much as model choice. I own the
+            system end-to-end: from ingestion and feature stores to inference,
+            evaluation harnesses, and product polish.
+          </p>
+          <ul class="ms-5 list-disc space-y-2">
+            <li>
+              Production-ready data plumbing: clean ingestion, schema contracts, and
+              quality gates that keep downstream models honest.
+            </li>
+            <li>
+              Applied AI loops: retrieval, routing, and evaluation suites tuned to real
+              usage instead of benchmark theater.
+            </li>
+            <li>
+              Builder rhythm: fast prototypes that ship into durable services with
+              logging, alerts, and debuggable feedback loops.
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-3 rounded-lg border border-border bg-background/70 p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">What stays constant</h3>
+          <div class="space-y-2 text-sm leading-relaxed">
+            <p class="font-semibold text-foreground">Opinionated stack</p>
+            <p>
+              Data warehouses, vector stores, and lean services wired together with
+              strong contracts, tracing, and reproducible deployments.
+            </p>
+            <p class="font-semibold text-foreground">Tight feedback loops</p>
+            <p>
+              Instrumentation on every path—telemetry for users, pipelines for data,
+              and dashboards for myself to course-correct quickly.
+            </p>
+            <p class="font-semibold text-foreground">No hand-offs</p>
+            <p>
+              I write the code, tune the models, and shape the UX so the system feels
+              cohesive instead of stitched together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="systems" class="py-10 space-y-6">
+      <div class="flex flex-wrap items-baseline gap-3">
+        <h2 class="text-2xl font-semibold">Systems I’m excited to build</h2>
+        <span class="rounded-full bg-muted/60 px-3 py-1 text-xs uppercase tracking-wide text-foreground/70">
+          AI & Data
+        </span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="rounded-lg border border-border bg-muted/30 p-5 shadow-sm">
+          <h3 class="text-lg font-semibold">Data & analytics platforms</h3>
+          <p class="mt-2 leading-relaxed">
+            Modern data stacks with lineage, governance, and metrics everyone can trust.
+            I optimize pipelines for clarity and predictable costs.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-5 shadow-sm">
+          <h3 class="text-lg font-semibold">AI inference + evaluation</h3>
+          <p class="mt-2 leading-relaxed">
+            Retrieval, routing, and fine-tuning with evaluation harnesses that reflect
+            live behavior—not just benchmarks.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-muted/30 p-5 shadow-sm">
+          <h3 class="text-lg font-semibold">Productized research</h3>
+          <p class="mt-2 leading-relaxed">
+            Turning prototypes into durable features with safe rollouts, A/B frameworks,
+            and crisp UX so users feel the intelligence, not the latency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <Hr />
+
+    <section id="explorations" class="py-10 space-y-5">
+      <div class="flex flex-wrap items-baseline gap-3">
+        <h2 class="text-2xl font-semibold">Recent explorations</h2>
+        <span class="rounded-full bg-accent/10 px-3 py-1 text-xs uppercase tracking-wide text-accent">
+          In progress
+        </span>
+      </div>
+      <div class="space-y-3">
+        <div class="rounded-lg border border-border bg-background/80 p-4 shadow-sm">
+          <p class="text-sm font-semibold uppercase tracking-wide text-foreground/80">
+            Retrieval-first analytics
+          </p>
+          <p class="leading-relaxed">
+            Building retrieval layers that blend warehouse metrics with embeddings so
+            AI features stay grounded in source-of-truth data.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-background/80 p-4 shadow-sm">
+          <p class="text-sm font-semibold uppercase tracking-wide text-foreground/80">
+            Evaluation & guardrails
+          </p>
+          <p class="leading-relaxed">
+            Designing scorecards, synthetic test sets, and circuit-breakers that catch
+            regressions before users do.
+          </p>
+        </div>
+        <div class="rounded-lg border border-border bg-background/80 p-4 shadow-sm">
+          <p class="text-sm font-semibold uppercase tracking-wide text-foreground/80">
+            Founder-led delivery
+          </p>
+          <p class="leading-relaxed">
+            Pairing directly with teams to shape requirements, ship v1, and leave them
+            with docs, dashboards, and a repeatable delivery pattern.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-2">
+        <LinkButton
+          href="mailto:dimasmoveit@gmail.com"
+          class="rounded-full border border-border bg-foreground px-4 py-2 text-background"
+          ariaLabel="Email about a project"
+        >
+          Build together
+        </LinkButton>
+        <LinkButton
+          href="/about"
+          class="rounded-full border border-border px-4 py-2"
+          ariaLabel="Learn more about Dimas"
+        >
+          Learn more about me
+        </LinkButton>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
